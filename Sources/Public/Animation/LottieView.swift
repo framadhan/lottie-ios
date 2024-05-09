@@ -7,6 +7,7 @@ import SwiftUI
 // MARK: - LottieView
 
 /// A wrapper which exposes Lottie's `LottieAnimationView` to SwiftUI
+@available(iOS 13.0, tvOS 13.0, macOS 10.15, *)
 public struct LottieView<Placeholder: View>: UIViewConfiguringSwiftUIView {
 
   // MARK: Lifecycle
@@ -583,6 +584,7 @@ public struct LottieView<Placeholder: View>: UIViewConfiguringSwiftUIView {
   }
 }
 
+@available(iOS 13.0, tvOS 13.0, macOS 10.15, *)
 extension View {
 
   /// The `.overlay` modifier that uses a `ViewBuilder` is available in iOS 15+, this helper function helps us to use the same API in older OSs
