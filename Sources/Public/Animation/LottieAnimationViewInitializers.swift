@@ -107,7 +107,7 @@ extension LottieAnimationView {
   /// - Parameter animationId: Animation id to play. Optional
   /// - Parameter completion: A closure that is called when the .lottie file is finished loading
   /// Defaults to first animation in file
-    @available(iOSApplicationExtension 13.0, *)
+    @available(iOS 13.0, *)
     public convenience init(
     dotLottieName name: String,
     bundle: Bundle = Bundle.main,
